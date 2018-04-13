@@ -1,0 +1,12 @@
+<button type="button" class="close" onclick="document.getElementById('Form01').style.display='none';">X</button>
+<div class="btn-toolbar" style="margin-bottom:20px;">
+	<div class="btn-group">
+	  <button onclick="appml('Form01').newRecord();" type="button" class="btn btn-default"><span class="glyphicon glyphicon-new-window"></span> New</button>
+	  <button onclick="appml('Form01').saveRecord();" type="button" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk"></span> Save</button>
+	  <button onclick="appml('Form01').deleteRecord();" type="button" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span> Delete</button>
+	</div>
+</div>
+<div id="appmlmessage" class="alert alert-warning" style="display:none;">
+  <button type="button" class="close" onclick="this.parentNode.style.display='none';">X</button>
+  <div id="message"></div>
+</div>

@@ -1,0 +1,74 @@
+<div id="appml_filtercontainer" class="jumbotron" style="display:none">
+<button id="appmlbtn_queryClose" type="button" class="close"><span>&times;</span></button>
+<div class="row">
+  <div class="col-sm-10">
+    <h2>Filter</h2>
+  </div>
+  <div class="col-sm-2">
+    <button id="appmlbtn_queryOK" type="button" class="btn btn-primary">OK</button>
+  </div>
+</div>
+<div id="appml_filter">
+	<div class="row">
+	  <div class="col-sm-3">
+	    <label>ProductName:</label>
+	  </div>
+	  <div class="col-sm-2">
+	    <input id="appml_datatype_ProductName" type='hidden'>
+	    <select id="appml_operator_ProductName" class="form-control">
+	      <option value="0">=</option>
+	      <option value="1">&lt;&gt;</option>
+	      <option value="2">&lt;</option>
+	      <option value="3">&gt;</option>
+	      <option value="4">&lt;=</option>
+	      <option value="5">&gt;=</option>
+	      <option value="6">%</option>
+	    </select>
+	  </div>
+	  <div class="col-sm-7">
+	    <input id="appml_query_ProductName" class="form-control">
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-sm-3">
+	    <label>Supplier ID:</label>
+	  </div>
+	  <div class="col-sm-2">
+	    <input id="appml_datatype_Suppliers.SupplierID" type='hidden'>
+	    <select id="appml_operator_Suppliers.SupplierID" class="form-control">
+	      <option value="10">=</option>
+	      <option value="11">&lt;&gt;</option>
+	    </select>
+	  </div>
+	  <div class="col-sm-7">
+        <div appml-data="appmlb2e4.json?model=model_dropdown_suppliers">
+          <select id="appml_query_Suppliers.SupplierID" class="form-control">
+            <option value=""></option>
+            <option appml-repeat="records" value="{{SupplierID}}">{{SupplierName}}</option>
+          </select>
+        </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <div class="col-sm-3">
+	    <label>Category ID:</label>
+	  </div>
+	  <div class="col-sm-2">
+	    <input id="appml_datatype_Categories.CategoryID" type='hidden'>
+	    <select id="appml_operator_Categories.CategoryID" class="form-control">
+	      <option value="10">=</option>
+	      <option value="11">&lt;&gt;</option>
+	    </select>
+	  </div>
+	  <div class="col-sm-7">
+        <div appml-data="appml2f42.json?model=model_dropdown_categories">
+          <select id="appml_query_Categories.CategoryID" class="form-control">
+            <option value=""></option>
+            <option appml-repeat="records" value="{{CategoryID}}">{{CategoryName}}</option>
+          </select>
+        </div>
+
+	  </div>
+	</div>
+</div>
+</div>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_magellan_iframe2.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:46 GMT -->
+<head>
+  <title>Foundation Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+<body>
+
+<div data-magellan-expedition="fixed">
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">WebSiteName</a></h1>
+    </li>
+    <!-- Collapsible Button on small screens: remove the .menu-icon class to get rid of icon. 
+    Remove the "Menu" text if you only want to show the icon -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <ul class="left">
+      <li data-magellan-arrival="page1"><a href="#page1">Page 1</a></li>
+      <li data-magellan-arrival="page2"><a href="#page2">Page 2</a></li>
+    </ul>
+  </section>
+</nav>
+</div>
+
+<div style="padding:20px;height:1500px;">
+  <h3>Magellan Topbar Example</h3>
+  <p>Scroll down this frame to see how the Magellan works with a Topbar.</p>
+
+<div style="height:200px;background-color:#1abc9c;color:white;">
+  <h3 data-magellan-destination="page1">Page1</h3>
+  <a name="page1"></a>
+  <p>Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<h3 data-magellan-destination="page2">Page2</h3>
+<a name="page2"></a>
+<p>Try to scroll this section and look at the navigation bar while scrolling! Also try to scroll upwards.</p>
+</div>
+
+<!-- Initialize Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_magellan_iframe2.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:46 GMT -->
+</html>

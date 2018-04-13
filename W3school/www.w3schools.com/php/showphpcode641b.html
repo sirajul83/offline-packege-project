@@ -1,0 +1,18 @@
+
+
+<HTML>
+
+<!-- Mirrored from www.w3schools.com/php/showphpcode.asp?source=demo_func_validate_ip2 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 23:00:29 GMT -->
+<HEAD>
+<style>
+html,body {
+    font: 15px Consolas,'Courier New',Verdana, Arial, Helvetica;
+}
+</style>
+</HEAD>
+&lt;!DOCTYPE html><br>&lt;html><br>&lt;body><br><br><FONT COLOR=#ff0000>&lt;?php<br>// Variable to check<br>$ip = "2001:0db8:85a3:08d3:1319:8a2e:0370:7334";<br><br>// Validate ip as IPv6<br>if (!filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV6) === false) {<br>&nbsp;&nbsp;&nbsp;&nbsp;    echo("$ip is a valid IPv6 address");<br>} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;    echo("$ip is not a valid IPv6 address");<br>}<br>?&gt;</FONT><br><br>&lt;/body><br>&lt;/html><br>
+
+
+<!-- Mirrored from www.w3schools.com/php/showphpcode.asp?source=demo_func_validate_ip2 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 23:00:29 GMT -->
+</HTML>
+

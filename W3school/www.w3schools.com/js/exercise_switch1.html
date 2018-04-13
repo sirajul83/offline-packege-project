@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.w3schools.com/js/exercise_switch1.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 22:39:55 GMT -->
+<body>
+
+<input id="myInput" type="text" value="Apple">
+<button onclick="checkFruit()">Check Fruit</button>
+<p id="demo"></p>
+
+<script>
+function checkFruit() {
+  var text;
+  var fruits = document.getElementById("myInput").value;
+
+  switch(fruits) {
+    case "Banana":
+      text = "Banana is good!";
+      break;
+    case "Orange":
+      text = "I am not a fan of orange.";
+      break;
+
+    // add case here
+
+    default:
+      text = "I have never heard of that fruit.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/js/exercise_switch1.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 22:39:55 GMT -->
+</html>

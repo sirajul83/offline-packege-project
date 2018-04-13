@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.w3schools.com/js/exercise_break4.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 22:39:56 GMT -->
+<body>
+
+<input id="myInput" type="text" value="BMW">
+<button onclick="checkCar()">Check Car</button>
+<p id="demo"></p>
+
+<script>
+function checkCar() {
+  var text;
+  var favCar = document.getElementById("myInput").value;
+
+  switch(favCar) {
+    case "BMW":
+      text = "German car";
+    case "Ford":
+      text = "American car";
+    case "Peugeot":
+      text = "French car";
+    default:
+      text = "Unknown car name";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/js/exercise_break4.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 22:39:56 GMT -->
+</html>

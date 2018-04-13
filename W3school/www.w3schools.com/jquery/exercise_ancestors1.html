@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.w3schools.com/jquery/exercise_ancestors1.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 22:40:00 GMT -->
+<head>
+<style>
+.ancestors * { 
+    display: block;
+    border: 2px solid lightgrey;
+    color: lightgrey;
+    padding: 5px;
+    margin: 15px;
+}
+</style>
+<script src="../../ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("span").method.css({"color": "red"});
+});
+</script>
+</head>
+<body>
+
+<div class="ancestors">
+  <div style="width:500px;">div (great-grandparent)
+    <ul>ul (grandparent)  
+      <li>li (direct parent)
+        <span>span</span>
+      </li>
+    </ul>   
+  </div>
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/jquery/exercise_ancestors1.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 22:40:00 GMT -->
+</html>

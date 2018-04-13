@@ -1,0 +1,18 @@
+
+
+<HTML>
+
+<!-- Mirrored from www.w3schools.com/php/showphpcode.asp?source=demo_func_filter_input by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 23:00:29 GMT -->
+<HEAD>
+<style>
+html,body {
+    font: 15px Consolas,'Courier New',Verdana, Arial, Helvetica;
+}
+</style>
+</HEAD>
+&lt;!DOCTYPE html><br>&lt;html><br>&lt;body><br><br>&lt;form method="get" action="<FONT COLOR=#ff0000>&lt;?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?&gt;</FONT>"> <br>E-mail: &lt;input type="text" name="email"><br>&lt;input type="submit" name="submit" value="Submit"> <br>&lt;/form><br><br><FONT COLOR=#ff0000>&lt;?php<br>if (isset($_GET["email"])) {<br>&nbsp;&nbsp;&nbsp;&nbsp;    if (!filter_input(INPUT_GET, "email", FILTER_VALIDATE_EMAIL) === false) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        echo("Email is valid");<br>&nbsp;&nbsp;&nbsp;&nbsp;    } else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        echo("Email is not valid");<br>&nbsp;&nbsp;&nbsp;&nbsp;    }<br>}<br>?&gt;</FONT><br><br>&lt;/body><br>&lt;/html><br>
+
+
+<!-- Mirrored from www.w3schools.com/php/showphpcode.asp?source=demo_func_filter_input by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 23:00:29 GMT -->
+</HTML>
+

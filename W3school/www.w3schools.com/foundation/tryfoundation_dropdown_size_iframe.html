@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_dropdown_size_iframe.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:44 GMT -->
+<head>
+  <title>Foundation Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+<body>
+
+<!-- Tiny Dropdown -->
+<a href="#" data-dropdown="id01" class="button dropdown">Tiny</a>
+<ul id="id01" data-dropdown-content class="f-dropdown tiny">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+<br>
+<!-- Small Dropdown -->
+<a href="#" data-dropdown="id02" class="button dropdown">Small</a>
+<ul id="id02" data-dropdown-content class="f-dropdown small">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+<br>
+
+<!-- Medium Dropdown -->
+<a href="#" data-dropdown="id03" class="button dropdown">Medium</a>
+<ul id="id03" data-dropdown-content class="f-dropdown medium">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+<br>
+
+<!-- Large Dropdown -->
+<a href="#" data-dropdown="id04" class="button dropdown">Large</a>
+<ul id="id04" data-dropdown-content class="f-dropdown large">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+<br>
+
+<!-- Mega Dropdown -->
+<a href="#" data-dropdown="id05" class="button dropdown">Mega</a>
+<ul id="id05" data-dropdown-content class="f-dropdown mega">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+
+<!-- Initialize Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+    $('.f-dropdown a[href]').click(function (e) { e.preventDefault(); });
+})
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_dropdown_size_iframe.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:44 GMT -->
+</html>

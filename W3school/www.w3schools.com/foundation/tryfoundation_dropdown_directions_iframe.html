@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_dropdown_directions_iframe.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:44 GMT -->
+<head>
+  <title>Foundation Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+<body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="#" data-dropdown="id01" data-options="align:right" class="button dropdown">Right</a>
+<ul id="id01" data-dropdown-content class="f-dropdown">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+
+<a href="#" data-dropdown="id02" data-options="align:top" class="button dropdown">Top</a>
+<ul id="id02" data-dropdown-content class="f-dropdown">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+
+<a href="#" data-dropdown="id03" data-options="align:bottom" class="button dropdown">Bottom</a>
+<ul id="id03" data-dropdown-content class="f-dropdown">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+
+<a href="#" data-dropdown="id04" data-options="align:left" class="button dropdown">Left</a>
+<ul id="id04" data-dropdown-content class="f-dropdown">
+  <li><a href="#">Link 1</a></li>
+  <li><a href="#">Link 2</a></li>
+  <li><a href="#">Link 3</a></li>
+</ul>
+
+<!-- Initialize Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+    $('.f-dropdown a[href]').click(function (e) { e.preventDefault(); });
+})
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_dropdown_directions_iframe.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:44 GMT -->
+</html>

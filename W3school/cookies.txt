@@ -1,0 +1,10 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.w3schools.com	TRUE	/php/	FALSE	1999999999	myCookie	Hello+world%21
+www.w3schools.com	TRUE	/	FALSE	1999999999	ASPSESSIONIDSQARCBQB	JPNPKLBBMHKANJCFCFOBJBMO
+www.w3schools.com	TRUE	/	FALSE	1999999999	ASPSESSIONIDSQDTABRA	LIOKADNBLMHNBHHOGOLFJHMJ
+www.w3schools.com	TRUE	/	FALSE	1999999999	PHPSESSID	ope2hki50s8u0p23krkj086304
+www.w3schools.com	TRUE	/	FALSE	1999999999	NumVisits	1
+www.w3schools.com	TRUE	/	FALSE	1999999999	user	deleted
+www.w3schools.com	TRUE	/	FALSE	1999999999	test_cookie	test
+

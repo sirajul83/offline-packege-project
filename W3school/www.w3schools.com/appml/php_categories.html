@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from www.w3schools.com/appml/php_categories.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:59:38 GMT -->
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<script src="2.0.2/appml.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>Categories</h1>
+<div id="Form01" class="jumbotron" appml-data="appml.php?model=model_categoriesform" appml-controller="myFormController" style="display:none">
+  <div appml-include-html="inc_formcommands.html"></div>
+  <div class="form-group">
+    <label>CategoryName:</label>
+    <input id="CategoryName" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Description:</label>
+    <input id="Description" class="form-control">
+  </div>
+</div>
+
+<div appml-data="appmlab3f.json?model=model_categorieslist">
+  <div appml-include-html="inc_listcommands_nofilter.html"></div>
+  <table class="table table-striped table-bordered">
+  <tr>
+    <th></th>
+    <th>Category</th>
+    <th>Description</th>
+  </tr>
+  <tr appml-repeat="records">
+    <td style="cursor:pointer" onclick="appml('Form01').run({{CategoryID}})">
+    <span class="glyphicon glyphicon-edit"></span></td>
+    <td>{{CategoryName}}</td>
+    <td>{{Description}}</td>
+  </tr>
+  </table>
+</div>
+</div>
+
+<script>
+function myFormController($appml) {
+    if ($appml.message == "ready") {return -1;}
+    if ($appml.message == "loaded") {
+        document.getElementById("Form01").style.display = "";
+    }
+}
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/appml/php_categories.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:59:40 GMT -->
+</html>

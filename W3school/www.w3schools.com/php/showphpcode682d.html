@@ -1,0 +1,18 @@
+
+
+<HTML>
+
+<!-- Mirrored from www.w3schools.com/php/showphpcode.asp?source=demo_func_filter_list by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 23:00:29 GMT -->
+<HEAD>
+<style>
+html,body {
+    font: 15px Consolas,'Courier New',Verdana, Arial, Helvetica;
+}
+</style>
+</HEAD>
+&lt;!DOCTYPE html><br>&lt;html><br>&lt;head><br>&lt;style><br>table, th, td {<br>&nbsp;&nbsp;&nbsp;&nbsp;    border: 1px solid black;<br>&nbsp;&nbsp;&nbsp;&nbsp;    border-collapse: collapse;<br>}<br>th, td {<br>&nbsp;&nbsp;&nbsp;&nbsp;    padding: 5px;<br>}<br>&lt;/style><br>&lt;/head><br>&lt;body><br><br>&lt;table><br>&nbsp;&nbsp;  &lt;tr><br>&nbsp;&nbsp;&nbsp;&nbsp;    &lt;td>Filter Name&lt;/td><br>&nbsp;&nbsp;&nbsp;&nbsp;    &lt;td>Filter ID&lt;/td><br>&nbsp;&nbsp;  &lt;/tr><br>&nbsp;&nbsp;  <FONT COLOR=#ff0000>&lt;?php<br>&nbsp;&nbsp;  foreach (filter_list() as $id =>$filter) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      echo '&lt;tr>&lt;td>' . $filter . '&lt;/td>&lt;td>' . filter_id($filter) . '&lt;/td>&lt;/tr>';<br>&nbsp;&nbsp;  }<br>&nbsp;&nbsp;  ?&gt;</FONT><br>&lt;/table><br><br>&lt;/body><br>&lt;/html><br>
+
+
+<!-- Mirrored from www.w3schools.com/php/showphpcode.asp?source=demo_func_filter_list by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 23:00:29 GMT -->
+</HTML>
+

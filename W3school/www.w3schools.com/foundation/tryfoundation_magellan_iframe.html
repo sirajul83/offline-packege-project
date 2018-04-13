@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_magellan_iframe.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:46 GMT -->
+<head>
+  <title>Foundation Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+<body style="height:1200px;padding:20px;">
+
+<h3>Magellan</h3>
+<p>The Magellan creates a fixed-position navigation and is used to automatically update links in a navigation list based on scroll position:</p>
+<hr>
+
+<div data-magellan-expedition="fixed">
+  <dl class="sub-nav">
+    <dd data-magellan-arrival="page1"><a href="#page1">Page 1</a></dd>
+    <dd data-magellan-arrival="page2"><a href="#page2">Page 2</a></dd>
+    <dd data-magellan-arrival="page3"><a href="#page3">Page 3</a></dd>
+  </dl>
+</div>
+<hr>
+
+<div style="height:200px;background-color:#1abc9c;color:white;padding:20px;margin:0 -20px;">
+  <h3 data-magellan-destination="page1" style="color:white;">Page1</h3>
+  <a name="page1"></a>
+  <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+</div>
+
+<div style="height:200px;background-color:#f4511e;color:white;padding:20px;margin:0 -20px;">
+<h3 data-magellan-destination="page2" style="color:white;">Page2</h3>
+<a name="page2"></a>
+<p>Try to scroll this section and look at the navigation list while scrolling! Also try to scroll upwards.</p>
+</div>
+
+<div style="height:200px;background-color:#474e5d;color:white;padding:20px;margin:0 -20px;">
+<h3 data-magellan-destination="page3" style="color:white;">Page3</h3>
+<a name="page3"></a>
+<p>Try to scroll this section and look at the navigation list while scrolling! Also try to scroll upwards.</p>
+</div>
+
+<!-- Initialize Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_magellan_iframe.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:46 GMT -->
+</html>

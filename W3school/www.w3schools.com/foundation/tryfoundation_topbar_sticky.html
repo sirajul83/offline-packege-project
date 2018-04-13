@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_topbar_sticky.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:46 GMT -->
+<head>
+  <title>Foundation Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.css">
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+<body style="height:1000px">
+
+<div>
+  <h1>Sticky Topbar</h1> 
+  <h3>Fixed (sticky) topbar on scroll</h3>
+  <p>Scroll this frame to see how the top bar behaves when wrapped in class="sticky".</p>
+  <p>When the navigation bar hits the top of the browser window, <br>it will act like the fixed top bar and stick to the top as the user continues to scroll.</p>
+</div>
+
+<div class="sticky">
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">WebSiteName</a></h1>
+      </li>
+      <!-- Collapsible Button on small screens: remove the .menu-icon class to get rid of icon. 
+      Remove the "Menu" text if you only want to show the icon -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <ul class="left">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>    
+      </ul>
+    </section>
+  </nav>
+</div>
+<h2>Some text to enable scrolling</h2>
+<h2>Some text to enable scrolling</h2>
+<h2>Some text to enable scrolling</h2>
+<h2>Some text to enable scrolling</h2>
+<h2>Some text to enable scrolling</h2>
+<h2>Some text to enable scrolling</h2>
+<h2>Some text to enable scrolling</h2>
+
+<!-- Initialize Foundation JS -->
+<script>
+$(document).ready(function() {
+    $(document).foundation();
+})
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/foundation/tryfoundation_topbar_sticky.htm by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Nov 2015 21:53:46 GMT -->
+</html>
